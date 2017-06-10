@@ -1,10 +1,12 @@
 package com.example.wang.coolweather.db;
 
+import org.litepal.crud.DataSupport;
+
 /**
- * Created by Wang on 2017/5/30.
+ * Created by Wang on 2017/6/8.
  */
 
-public class Country {
+public class County extends DataSupport {
     private int id;
 
     private String countryName;
@@ -21,11 +23,11 @@ public class Country {
         this.id=id;
     }
 
-    public String getCountryName(){
+    public String getCountyName(){
         return countryName;
     }
 
-    public void setCountryName(String countryName){
+    public void setCountyName(String countryName){
         this.countryName=countryName;
     }
 
